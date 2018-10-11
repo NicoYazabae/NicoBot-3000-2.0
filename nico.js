@@ -48,7 +48,7 @@ bot.on("message", async message => {
 
         var Num = Math.ceil(Math.random()*24) - 1;
 
-        return message.channel.send(Operators[Num]);
+        return message.channel.send(Operators[Num] + " " + Num);
 
 
     }
