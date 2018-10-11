@@ -46,7 +46,7 @@ bot.on("message", async message => {
 
     if (cmd === prefix + "OpPick") {
 
-        var Num = Math.ceil(Math.random()*20) - 1;
+        var Num = Math.ceil(Math.random()*Operators.length) - 1;
 
         return message.channel.send(Operators[Num] + " " + Num);
 
