@@ -66,7 +66,7 @@ bot.on("message", async message => {
 })
 
 
-//test123
+
 bot.on('message', message => {
   // If the message is "ping"
   if (message.content === 'ping') {
