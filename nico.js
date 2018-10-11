@@ -1,4 +1,5 @@
 const botconfig = require("./botconfig.json");
+const Operators = require("./Operators.json");
 const { Client , Attachment } = require("discord.js");
 
 const bot = new Client({
@@ -43,8 +44,17 @@ bot.on("message", async message => {
         message.channel.send( `${message.author},`, attachment);
     }
 
-
     if (cmd === prefix + "OpPick") {
+
+        var Num = Math.ceil(Math.random()*3) - 1;
+
+        return message.channel.send(Operators[Num]);
+
+
+    }
+
+
+    if (cmd === prefix + "OpPickOld") {
 
         RandomNum = Math.random();
 
