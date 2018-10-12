@@ -40,7 +40,7 @@ bot.on("message", async message => {
      if (cmd === prefix + "oof") {
 
 
-        const attachment = new Attachment('https://ih0.redbubble.net/image.564965245.1274/flat,800x800,070,f.u1.jpg');
+        let attachment = new Attachment('https://ih0.redbubble.net/image.564965245.1274/flat,800x800,070,f.u1.jpg');
 
         message.channel.send( `${message.author},`, attachment);
     }
@@ -48,9 +48,11 @@ bot.on("message", async message => {
     if (cmd === prefix + "OpPick") {
 
         let Num = Math.ceil(Math.random()*Operators.length) - 1;
+        let attachment = new Attachment("./Operators/" + Operators[Num].image + ".png" );
 
-        return message.channel.send(Operators[Num] + " " + Num);
 
+
+        return    message.channel.send(Operators[Num].Name + " " + Num, attachment);
 
     }
 
