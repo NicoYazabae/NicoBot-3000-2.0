@@ -53,6 +53,18 @@ bot.on("message", async message => {
 
     }
 
+    if (cmd === prefix + "Op2") {
+        var Num1 = Math.ceil(Math.random()*Operators.length) - 1;
+
+        var Num2 = Math.ceil(Math.random()*Operators.length) - 1;
+
+        if (Num2 === Num1) {
+            var Num2 = Math.ceil(Math.random()*Operators.length) - 1;
+        }
+
+        return message.channel.send("Your two Operators are: " + Operators[Num1] + " " + [Num1] + " and " + Operators[Num2] + " " + [Num2] + ".");
+    }
+
 
 });
 
