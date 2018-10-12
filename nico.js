@@ -1,6 +1,7 @@
 const botconfig = require("./botconfig.json");
 const Operators = require("./Operators.json");
 const { Client , Attachment } = require("discord.js");
+const VCID = "474689718425223168"
 
 const bot = new Client({
     disableEveryone: true,
@@ -68,7 +69,7 @@ bot.on("message", async message => {
 
     if (cmd === prefix + "NumTest") {
 
-    let VC = voiceChannel.members.size
+    let VC = channel.id
 
         return message.channel.send(VC);
 
