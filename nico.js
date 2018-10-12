@@ -45,7 +45,7 @@ bot.on("message", async message => {
         message.channel.send( `${message.author},`, attachment);
     }
 
-    if (cmd === prefix + "OpPick") {
+    if (cmd === prefix + ("OpPick" || "opPick" || "oppick" || "op" || "oP" || "OP")) {
 
         let Num = Math.ceil(Math.random()*Operators.length) - 1;
         let attachment = new Attachment("./Operators/" + Operators[Num].image + ".png" );
