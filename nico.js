@@ -46,107 +46,25 @@ bot.on("message", async message => {
 
     if (cmd === prefix + "OpPick") {
 
-        var Num = Math.ceil(Math.random()*20) - 1;
+        var Num = Math.ceil(Math.random()*Operators.length) - 1;
 
         return message.channel.send(Operators[Num] + " " + Num);
 
 
     }
 
+    if (cmd === prefix + "Op2") {
+        var Num1 = Math.ceil(Math.random()*Operators.length) - 1;
 
-    if (cmd === prefix + "OpPickOld") {
+        var Num2 = Math.ceil(Math.random()*Operators.length) - 1;
 
-        RandomNum = Math.random();
-
-        if (RandomNum < 1/22*1) {
-            return message.channel.send("Blitz");
+        if (Num2 === Num1) {
+            var Num2 = Math.ceil(Math.random()*Operators.length) - 1;
         }
 
-        if (RandomNum > 1/22*1 && RandomNum < 1/22*2) {
-            return message.channel.send("IQ");
-        }
+        return message.channel.send("Your two Operators are: " + Operators[Num1] + " " + [Num1] + " and " + Operators[Num2] + " " + [Num2] + ".");
+    }
 
-        if (RandomNum > 1/22*2 && RandomNum < 1/22*3) {
-            return message.channel.send("Sledge");
-        }
-
-        if (RandomNum > 1/22*3 && RandomNum < 1/22*4) {
-            return message.channel.send("Kapkan");
-        }
-
-        if (RandomNum > 1/22*4 && RandomNum < 1/22*5) {
-            return message.channel.send("Tachanka");
-        }
-
-        if (RandomNum > 1/22*5 && RandomNum < 1/22*6) {
-            return message.channel.send("Glaz");
-        }
-
-        if (RandomNum > 1/22*6 && RandomNum < 1/22*7) {
-            return message.channel.send("Fuze");
-        }
-
-        if (RandomNum > 1/22*7 && RandomNum < 1/22*8) {
-            return message.channel.send("Blitz");
-        }
-
-        if (RandomNum > 1/22*8 && RandomNum < 1/22*9) {
-            return message.channel.send("Bandit");
-        }
-
-        if (RandomNum > 1/22*9 && RandomNum < 1/22*10) {
-            return message.channel.send("Jäger");
-        }
-
-        if (RandomNum > 1/22*10 && RandomNum < 1/22*11) {
-            return message.channel.send("Rook");
-        }
-
-        if (RandomNum > 1/22*11 && RandomNum < 1/22*12) {
-            return message.channel.send("Doc");
-        }
-
-        if (RandomNum > 1/22*12 && RandomNum < 1/22*13) {
-            return message.channel.send("Twitch");
-        }
-
-        if (RandomNum > 1/22*13 && RandomNum < 1/22*14) {
-            return message.channel.send("Montagne");
-        }
-
-        if (RandomNum > 1/22*14 && RandomNum < 1/22*15) {
-            return message.channel.send("Thermite");
-        }
-
-        if (RandomNum > 1/22*15 && RandomNum < 1/22*16) {
-            return message.channel.send("Pulse");
-        }
-
-        if (RandomNum > 1/22*16 && RandomNum < 1/22*17) {
-            return message.channel.send("Castle");
-        }
-
-        if (RandomNum > 1/22*17 && RandomNum < 1/22*18) {
-            return message.channel.send("Ash");
-        }
-
-        if (RandomNum > 1/22*18 && RandomNum < 1/22*19) {
-            return message.channel.send("Thatcher");
-        }
-
-        if (RandomNum > 1/22*19 && RandomNum < 1/22*20) {
-            return message.channel.send("Smoke");
-        }
-
-        if (RandomNum > 1/22*20 && RandomNum < 1/22*21) {
-            return message.channel.send("Sledge");
-        }
-
-        if (RandomNum > 1/22*21 && RandomNum < 1/22*22) {
-            return message.channel.send("Mute");
-        }
-
-        }
 
 });
 
