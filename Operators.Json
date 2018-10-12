@@ -1,5 +1,102 @@
-
 [
-    "Kapkan", "Tachanka", "Glaz", "Fuze", "IQ", "Blitz", "Bandit", "JÃ¤ger", "Rook", "Doc", "Twitch", "Montagne", "Thermite", "Pulse", "Castle", "Ash", "Thatcher", "Smoke", "Sledge", "Mute"
+  {
+    "Name": "Kapkan",
+    "image": "Kapkan",
+    "stat": "Def"
+  },
+  {
+    "Name": "Tachanka",
+    "image": "Tachanka",
+    "stat": "Def"
+  },
+  {
+    "Name": "Glaz",
+    "image": "Glaz",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Fuze",
+    "image": "Fuze",
+    "stat": "Atk"
+  },
+  {
+    "Name": "IQ",
+    "image": "IQ",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Blitz",
+    "image": "Blitz",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Bandit",
+    "image": "Bandit",
+    "stat": "Def"
+  },
+  {
+    "Name": "Jäger",
+    "image": "Jäger",
+    "stat": "Def"
+  },
+  {
+    "Name": "Rook",
+    "image": "Rook",
+    "stat": "Def"
+  },
+  {
+    "Name": "Doc",
+    "image": "Doc",
+    "stat": "Def"
+  },
+  {
+    "Name": "Twitch",
+    "image": "Twitch",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Montagne",
+    "image": "Montagne",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Thermite",
+    "image": "Thermite",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Pulse",
+    "image": "Pulse",
+    "stat": "Def"
+  },
+  {
+    "Name": "Castle",
+    "image": "Castle",
+    "stat": "Def"
+  },
+  {
+    "Name": "Ash",
+    "image": "Ash",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Thatcher",
+    "image": "Thatcher",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Smoke",
+    "image": "Smoke",
+    "stat": "Def"
+  },
+  {
+    "Name": "Sledge",
+    "image": "Sledge",
+    "stat": "Atk"
+  },
+  {
+    "Name": "Mute",
+    "image": "Mute",
+    "stat": "Atk"
+  }
 ]
-
