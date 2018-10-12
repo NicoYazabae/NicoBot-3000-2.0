@@ -46,7 +46,7 @@ bot.on("message", async message => {
 
     if (cmd === prefix + "OpPick") {
 
-        var Num = Math.ceil(Math.random()*Operators.length) - 1;
+        let Num = Math.ceil(Math.random()*Operators.length) - 1;
 
         return message.channel.send(Operators[Num] + " " + Num);
 
@@ -54,19 +54,32 @@ bot.on("message", async message => {
     }
 
     if (cmd === prefix + "Op2") {
-        var Num1 = Math.ceil(Math.random()*Operators.length) - 1;
+        let Num1 = Math.ceil(Math.random()*Operators.length) - 1;
 
-        var Num2 = Math.ceil(Math.random()*Operators.length) - 1;
+        let Num2 = Math.ceil(Math.random()*Operators.length) - 1;
 
         if (Num2 === Num1) {
-            var Num2 = Math.ceil(Math.random()*Operators.length) - 1;
+            let Num2 = Math.ceil(Math.random()*Operators.length) - 1;
         }
+        else {
 
-        return message.channel.send("Your two Operators are: " + Operators[Num1] + " " + [Num1] + " and " + Operators[Num2] + " " + [Num2] + ".");
+        return message.channel.send("Your two Operators are: " + Operators[Num1] + " " + Num1 + " and " + Operators[Num2] + " " + Num2 + ".");
+    } }
+
+    if (cmd === prefix + "NumTest") {
+
+    let VC = voiceChannel.members.size
+
+        return message.channel.send(VC);
+
+
     }
 
 
 });
+
+
+
 
 
 bot.on('message', message => {
