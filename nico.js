@@ -2,7 +2,7 @@ const botconfig = require("./botconfig.json");
 const Operators = require("./Operators.json");
 const { Client , Attachment } = require("discord.js");
 const VCID = "474689718425223168"
-
+let lol = 0;
 const bot = new Client({
     disableEveryone: true,
     autorun: true
@@ -32,6 +32,24 @@ bot.on("message", async message => {
         return message.channel.send("Nico Nico nii~ ❤️");
     }
 
+    if (cmd === prefix + "Test") {
+
+        lol += 1;
+
+
+        if (lol == 1) {
+         return message.channel.send("Nico Nico niiiiiiiiiiiiiiiiiiiiii");
+
+        }
+
+        else if (lol >= 2) {
+         return message.channel.send("fuck u fag");
+
+        }
+
+
+    }
+
     if (cmd === prefix + "Hello") {
 
         return message.channel.send("Hello " + `${message.author},`);
@@ -40,7 +58,7 @@ bot.on("message", async message => {
      if (cmd === prefix + "oof") {
 
 
-        let attachment = new Attachment('https://ih0.redbubble.net/image.564965245.1274/flat,800x800,070,f.u1.jpg');
+        let attachment = new Attachment('./otherpics/oof.png');
 
         message.channel.send( `${message.author},`, attachment);
     }
@@ -66,7 +84,17 @@ bot.on("message", async message => {
         }
         else {
 
-        return message.channel.send("Your two Operators are: " + Operators[Num1] + " " + Num1 + " and " + Operators[Num2] + " " + Num2 + ".");
+
+        let attachment = new Attachment("./Operators/" + Operators[Num1].image + ".png" );
+        let attachment2nd = new Attachment("./Operators/" + Operators[Num2].image + ".png" );
+
+
+
+       return message.channel.send("Your two Operators are: " + Operators[Num1].Name + " and " + Operators[Num2].Name + ".", {
+           file: "https://i.kym-cdn.com/entries/icons/original/000/003/549/Dolan.jpg",
+           file: "./oof.mp3"
+       });
+
     } }
 
     if (cmd === prefix + "NumTest") {
