@@ -2,7 +2,20 @@ const botconfig = require("./botconfig.json");
 const Operators = require("./Operators.json");
 const { Client , Attachment } = require("discord.js");
 const VCID = "474689718425223168"
+let Jimp = require('jimp');
+
+
+
+
+
+
 let lol = 0;
+
+
+
+
+
+
 const bot = new Client({
     disableEveryone: true,
     autorun: true
@@ -90,18 +103,36 @@ bot.on("message", async message => {
 
 
 
-       return message.channel.send("Your two Operators are: " + Operators[Num1].Name + " and " + Operators[Num2].Name + ".", {
-           file: "https://i.kym-cdn.com/entries/icons/original/000/003/549/Dolan.jpg",
-           file: "./oof.mp3"
-       });
+       return message.channel.send("Your two Operators are: " + Operators[Num1].Name + " and " + Operators[Num2].Name + ".", attachment);
 
     } }
 
-    if (cmd === prefix + "NumTest") {
+    if (cmd === prefix + "imageTest") {
 
-    let VC = channel.id
+        let images = [ './testImage/wallpaper.jpg','./Operators/Ash.png','./Operators/Smoke.png']
+        let Jimps = [];
 
-        return message.channel.send(VC);
+        for (var i = 0; i < images.length; i++) {
+            Jimps.push(Jimp.read(images[i]));
+
+        }
+
+        Promise.all(Jimps).then(function(data){
+            return Promise.all(Jimps);
+        }).then(function(data) {
+            data[0].composite(data[1],0,0);
+            data[0].composite(data[2],0,0);
+
+            data[0].write('final-images/test.png', function() {
+                console.log("wrote the image");
+                let attachment = new Attachment('final-images/test.png');
+
+                return message.channel.send("hello", attachment);
+            });
+
+        });
+
+
 
 
     }
