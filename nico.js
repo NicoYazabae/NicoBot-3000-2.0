@@ -23,7 +23,7 @@ const bot = new Client({
 
 bot.on("ready", async ()=> {
     console.log( bot.user.username + " is online!");
-    bot.user.setGame("nico nico nii~");
+    bot.user.setActivity("nico nico nii~");
 });
 
 
