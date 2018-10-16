@@ -1,0 +1,22 @@
+[
+{
+"name": "Ash",
+"image": ["Ash_icon", "Ash_profile"],
+"stat": "Atk",
+"priweap": ["M1014", "R4-C", "556xi"],
+"Secweap": ["MEUSOC", "5.7 USG"],
+"GAD11": ["Breach x 2", "Smoke x 2"],
+"GAD21": ["Frag x 1", "Stun x 3"]
+},
+
+{
+"name": "Sledge",
+"image": ["sledge_icon", "sledge_profile"],
+"stat": "Atk",
+"priweap": ["M1014", "R4-C", "556xi"],
+"Secweap": ["MEUSOC", "5.7 USG"],
+"GAD11": ["Breach x 2", "Smoke x 2"],
+"GAD21": ["Frag x 1", "Stun x 3"]
+}
+
+]
