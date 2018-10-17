@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Alibi",
+    "image": "Alibi",
+    "stat": "Def",
+    "primaryWeapon": ["Mx4 Storm (Submachine Gun)", "ACS12 (Shotgun)"],
+    "secondaryWeapon": ["Keratos .357 (Handgun)", "Bailiff 410 (Handgun)"],
+    "gadget": ["Impact Grenade", "Deployable Shield"]
+  },
+  {
+    "name": "Ash",
+    "image": "Ash",
+    "stat": "Atk",
+    "primaryWeapon": ["R4-C (Assult Rifle)", "G36C (Assult Rifle)"],
+    "secondaryWeapon": ["M45 MEUSOC (Handgun)", "5.7 USG (Handgun)"],
+    "gadget": ["Breach Charge", "Stun Grenade"]
+  },
+  {
+    "name": "Blackbeard",
+    "image": "Blackbeard",
+    "stat": "Atk",
+    "primaryWeapon": ["Mk17 CQB (Assault Rifle)", "SR-25 (Marksman Rifle)"],
+    "secondaryWeapon": ["D-50 (Handgun)"],
+    "gadget": ["Stun Grenade", "Breach Charge"]
+  },
+  {
+    "name": "Blitz",
+    "image": "Blitz",
+    "stat": "Atk",
+    "primaryWeapon": ["Flash Shield"],
+    "secondaryWeapon": ["P12 (Handgun)"],
+    "gadget": ["Smoke Grenade", "Breach Charge"]
+  },
+  {
+    "name": "Buck",
+    "image": "Buck",
+    "stat": "Atk",
+    "primaryWeapon": ["C8-SFW (Assault Rifle)", "CAMRS (Marksman Rifle)"],
+    "secondaryWeapon": ["Mk1 9mm (Handgun)"],
+    "gadget": ["Frag Grenade", "Stun Grenade"]
+  },
+  {
+    "name": "Bandit",
+    "image": "Bandit",
+    "stat": "Def",
+    "primaryWeapon": ["MP7 (Submachine Gun)", "M870 (Shotgun)"],
+    "secondaryWeapon": ["P12 (Handgun)"],
+    "gadget": ["Nitro Cell", "Barbed Wire"]
+  },
+  {
+    "name": "Capitao",
+    "image": "Capitao",
+    "stat": "Atk",
+    "primaryWeapon": ["PARA-308 (Assault Rifle)", "M249 (Light Machine Gun)"],
+    "secondaryWeapon": ["PRB92 (Handgun)"],
+    "gadget": ["Stun Grenade", "Claymore Mine"]
+  },
+  {
+    "name": "Castle",
+    "image": "Castle",
+    "stat": "Def",
+    "primaryWeapon": ["UMP45 (Submachine Gun)", "M1014 (Shotgun)"],
+    "secondaryWeapon": ["5.7 USG (Handgun)", "M45 MEUSOC (Handgun)"],
+    "gadget": ["Bulletproof Camera", "Impact Grenade"]
+  },
+  {
+    "name": "Caveira",
+    "image": "Caveira",
+    "stat": "Def",
+    "primaryWeapon": ["M12 (Submachine Gun)", "SPAS-15 (Shotgun)"],
+    "secondaryWeapon": ["Luison (Handgun)"],
+    "gadget": ["Bulletproof Camera", "Impact Grenade"]
+  },
+  {
+    "name": "Clash",
+    "image": "Clash",
+    "stat": "Def",
+    "primaryWeapon": "CCE Sheild",
+    "secondaryWeapon": ["P-10C (Handgun)", "SPSMG9 (Machine Pistol)"],
+    "gadget": ["Bulletproof Camera", "Impact Grenade"]
+  },
+  {
+    "name": "Doc",
+    "image": "Doc",
+    "stat": "Def",
+    "primaryWeapon": ["SG-CQB (Shotgun)", "MP5 (Submachine Gun)", "P90 (Submachine Gun)"],
+    "secondaryWeapon": ["P9 (Handgun)", "LFP586 (Handgun)"],
+    "gadget": ["Bulletproof Camera", "Barbed Wire"]
+  },
+  {
+    "name": "Dokkaebi",
+    "image": "Dokkaebi",
+    "stat": "Atk",
+    "primaryWeapon": ["Mk 14 EBR (Marksman Rifle)", "BOSG.12.2 (Shotgun)"],
+    "secondaryWeapon": ["C75 Auto (Machine Gun)", "SMG-12 (Machine Gun)"],
+    "gadget": ["Smoke Grenade", "Stun Grenade"]
+  },
+  {
+    "name": "Echo",
+    "image": "Echo",
+    "stat": "Def",
+    "primaryWeapon": ["SuperNova (Shotgun)", "MP5SD (Submachine Gun)"],
+    "secondaryWeapon": ["P229 (Handgun)", "Bearing 9 (Machine Pistol)"],
+    "gadget": ["Deployable Shield", "Barbed Wire"]
+  },
+  {
+    "name": "Ela",
+    "image": "Ela",
+    "stat": "Def",
+    "primaryWeapon": ["Scorpion EVO 3 A1 (Submachine Gun)", "FO-12 (Shotgun)"],
+    "secondaryWeapon": "RG15 (Handgun)",
+    "gadget": ["Barbed Wire", "Deployable Shield"]
+  },
+  {
+    "name": "Finka",
+    "image": "Finka",
+    "stat": "Atk",
+    "primaryWeapon": ["Spear .308 (Assault Rifle)", "6P41 (Light Machine Gun)", "SASG-12 (Shotgun)"],
+    "secondaryWeapon": ["PMM (Handgun)", "GSh-18 (Handgun)"],
+    "gadget": ["Breach Charge", "Frag Grenade"]
+  },
+  {
+    "name": "Frost",
+    "image": "Frost",
+    "stat": "Def",
+    "primaryWeapon": ["Super 90 (Shotgun)", "9mm C1 (Submachine Gun)"],
+    "secondaryWeapon": ["Mk1 9mm (Handgun)"],
+    "gadget": ["Bulletproof Camera", "Barbed Wire"]
+  },
+  {
+    "name": "Fuze",
+    "image": "Fuze",
+    "stat": "Atk",
+    "primaryWeapon": ["Balistic Shield", "6P41 (Light Machine Gun)", "AK-12 (Assault Rifle)"],
+    "secondaryWeapon": ["PMM (Handgun)", "GSh-18 (Handgun)"],
+    "gadget": ["Smoke Grenade", "Breach Charge"]
+  },
+  {
+    "name": "Glaz",
+    "image": "Glaz",
+    "stat": "Atk",
+    "primaryWeapon": ["OTs-03 (Marksman Rifle)"],
+    "secondaryWeapon": ["GSg-18 (Handgun)", "PMM (Handgun)"],
+    "gadget": ["Smoke Grenade", "Claymore Mine"]
+  },
+  {
+    "name": "Hibana",
+    "image": "Hibana",
+    "stat": "Atk",
+    "primaryWeapon": ["Type-89 (Assault Rifle)", "SuperNova (Shotgun)"],
+    "secondaryWeapon": ["P229 (Handgun)", "Bearing 9 (Machine Pistol)"],
+    "gadget": ["Stun Grenade", "Breach Charge"]
+  },
+  {
+    "name": "IQ",
+    "image": "IQ",
+    "stat": "Atk",
+    "primaryWeapon": ["AUG A2 (Assault Rifle)", "552 Commando (Assault Rifle)", "G8A1 (Light Machine Gun)"],
+    "secondaryWeapon": "P12 (Handgun)",
+    "gadget": ["Breach Charge", "Claymore Mine"]
+  },
+  {
+    "name": "Jackal",
+    "image": "Jackal",
+    "stat": "Atk",
+    "primaryWeapon": ["C7E (Assault Rifle)", "PDW9 (Submachine Gun)", "ITA12L (Shotgun)"],
+    "secondaryWeapon": ["ITA12S (Shotgun)", "USP40 (Handgun)"],
+    "gadget": ["Smoke Grenade", "Breach Charge"]
+  },
+  {
+    "name": "Jäger",
+    "image": "Jäger",
+    "stat": "Def",
+    "primaryWeapon": ["M870 (Shotgun)", "416-C Carbine (Assault Rifle)"],
+    "secondaryWeapon": "P12 (Handgun)",
+    "gadget": ["Deployable Shield", "Barbed Wire"]
+  },
+  {
+    "name": "Kapkan",
+    "image": "Kapkan",
+    "stat": "Def",
+    "primaryWeapon": ["9×19VSN (Submachine Gun)", "SASG-12 (Shotgun)"],
+    "secondaryWeapon": ["PMM (Handgun)", "GSh-18 (Handgun)"],
+    "gadget": ["Nitro Cell", "Impact Grenade"]
+  },
+  {
+    "name": "Lesion",
+    "image": "Lesion",
+    "stat": "Def",
+    "primaryWeapon": ["SIX12 SD (Shotgun)", "T-5 SMG (Submachine Gun)"],
+    "secondaryWeapon": "Q-929 (Handgun)",
+    "gadget": ["Impact Grenade", "Deployable Shield"]
+  },
+  {
+    "name": "Lion",
+    "image": "Lion",
+    "stat": "Atk",
+    "primaryWeapon": ["V308 (Assult Rifle)", "417 Marksman Rifle", "SG-CQB (Shotgun)"],
+    "secondaryWeapon": ["P9 Pistol (Handgun)", "LFP586 (Handgun)"],
+    "gadget": ["Claymore Mine", "Stun Grenade"]
+  },
+  {
+    "name": "Maestro",
+    "image": "Maestro",
+    "stat": "Def",
+    "primaryWeapon": ["ALDA 5.56 (Light Machine Gun)", "ACS12 (Shotgun)"],
+    "secondaryWeapon": ["Bailiff 410 (Handgun)", "Keratos .357 (Handgun)"],
+    "gadget": ["Barbed Wire", "Deployable Shield"]
+  },
+  {
+    "name": "Maverick",
+    "image": "Maverick",
+    "stat": "Atk",
+    "primaryWeapon": ["AR-15.50 (Assault Rifle)", "M4 (Assault Rifle)"],
+    "secondaryWeapon": "1911 TACOPS (Handgun)",
+    "gadget": ["Claymore", "Stun Grenade"]
+  },
+  {
+    "name": "Mira",
+    "image": "Mira",
+    "stat": "Def",
+    "primaryWeapon": ["Vector .45 ACP (Submachine Gun)", "ITA12L (Shotgun)"],
+    "secondaryWeapon": ["ITA12S (Shotgun)", "USP40 (Handgun)"],
+    "gadget": ["Deployable Shield", "Nitro Cell"]
+  },
+  {
+    "name": "Montagne",
+    "image": "Montagne",
+    "stat": "Atk",
+    "primaryWeapon": "Extendable Shield",
+    "secondaryWeapon": ["P9 (Handgun)", "LFP586 (Handgun)"],
+    "gadget": ["Stun Grenade", "Smoke Grenade"]
+  },
+  {
+    "name": "Mute",
+    "image": "Mute",
+    "stat": "Def",
+    "primaryWeapon": ["MP5K (Submachine Gun)", "M590A1 (Shotgun)"],
+    "secondaryWeapon": "P226 Mk 25 (Handgun)",
+    "gadget": ["Nitro Cell", "Bulletproof Camera"]
+  },
+  {
+    "name": "Pulse",
+    "image": "Pulse",
+    "stat": "Def",
+    "primaryWeapon": ["M1014 (Shotgun)", "UMP45 (Submachine Gun)"],
+    "secondaryWeapon": ["M45 MEUSOC (Handgun)", "5.7 USG (Handgun)"],
+    "gadget": ["Nitro Cell", "Barbed Wire"]
+  },
+  {
+    "name": "Rook",
+    "image": "Rook",
+    "stat": "Def",
+    "primaryWeapon": ["P90 (Submachine Gun)", "MP5 (Submachine Gun)", "SG-CQB (Shotgun)"],
+    "secondaryWeapon": ["LFP586 (Handgun)", "P9 (Handgun)"],
+    "gadget": ["Deployable Shield", "Impact Grenade"]
+  },
+  {
+    "name": "Sledge",
+    "image": "Sledge",
+    "stat": "Atk",
+    "primaryWeapon": ["L85A2 (Assult Rifle)", "M590A1 (Shotgun)"],
+    "secondaryWeapon": ["P226 mk 25 (Handgun)", "SMG-11 (Machine Pistol)"],
+    "gadget": ["Frag Grenade", "Stun Grenade"]
+  },
+  {
+    "name": "Smoke",
+    "image": "Smoke",
+    "stat": "Def",
+    "primaryWeapon": ["FMG-9 (Submachine Gun)", "M590A1 (Shotgun)"],
+    "secondaryWeapon": ["P226 Mk 25 (Handgun)", "SMG-11 (Machine Pistol)"],
+    "gadget": ["Barbed Wire", "Impact Grenade"]
+  },
+  {
+    "name": "Tachanka",
+    "image": "Tachanka",
+    "stat": "Def",
+    "primaryWeapon": ["SASG-12 (Shotgun)", "9×19VSN (Submachine Gun)"],
+    "secondaryWeapon": ["GSh-18 (Handgun)", "PMM (Handgun)"],
+    "gadget": ["Deployable Shield", "Barbed Wire"]
+  },
+  {
+    "name": "Thatcher",
+    "image": "Thatcher",
+    "stat": "Atk",
+    "primaryWeapon": ["AR33 (Assault Rifle)", "L85A2 (Assult Rifle)", "M590A1 (Shotgun)"],
+    "secondaryWeapon": ["P226 mk 25 (Handgun)"],
+    "gadget": ["Claymore Mine", "Breach Charge"]
+  },
+  {
+    "name": "Thermite",
+    "image": "Thermite",
+    "stat": "Atk",
+    "primaryWeapon": ["556xi (Assault Rifle)", "M1014 (Shotgun)"],
+    "secondaryWeapon": ["M45 MEUSOC (Handgun)", "5.7 USG (Handgun)"],
+    "gadget": ["Stun Grenade", "Claymore Mine"]
+  },
+  {
+    "name": "Twitch",
+    "image": "Twitch",
+    "stat": "Atk",
+    "primaryWeapon": ["F2 (Assault Rifle)", "417 (Marksman Rifle)", "SG-CQB (Shotgun)"],
+    "secondaryWeapon": ["P9 (Handgun)", "LFP586 (Handgun)"],
+    "gadget": ["Claymore Mine", "Breach Charge"]
+  },
+  {
+    "name": "Valkyrie",
+    "image": "Valkyrie",
+    "stat": "Def",
+    "primaryWeapon": ["MPX (Submachine Gun)", "SPAS-12 (Shotgun)"],
+    "secondaryWeapon": "D-50 (Handgun)",
+    "gadget": ["Deployable Shield", "Nitro Cell"]
+  },
+  {
+    "name": "Vigil",
+    "image": "Vigil",
+    "stat": "Def",
+    "primaryWeapon": ["K1A (Submachine Gun)", "BOSG.12.2 (Shotgun)"],
+    "secondaryWeapon": ["C75 Auto (Machine Pistol)", "SMG-12 (Machine Pistol)"],
+    "gadget": ["Bulletproof Camera", "Impact Grenade"]
+  },
+  {
+    "name": "Ying",
+    "image": "Ying",
+    "stat": "Atk",
+    "primaryWeapon": ["T-95 LSW (Light Machine Gun)", "SIX12 (Shotgun)"],
+    "secondaryWeapon": "Q-929 (Handgun)",
+    "gadget": ["Breach Charge", "Claymore"]
+  },
+  {
+    "name": "Zofia",
+    "image": "Zofia",
+    "stat": "Atk",
+    "primaryWeapon": ["LMG-E (Light Machine Gun)", "M762 (Assault Rifle)"],
+    "secondaryWeapon": "RG15 (Handgun)",
+    "gadget": ["Breach Charge", "Claymore"]
+  }
+]

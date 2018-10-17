@@ -1,67 +1,42 @@
+//Important bot configurations
 const botconfig = require("./botconfig.json");
 const Operators = require("./Operators.json");
 const TestOp = require("./TestOp.json");
 const { Client , Attachment } = require("discord.js");
-const VCID = "474689718425223168"
-let Jimp = require('jimp');
-
-
-
-
-
-
-let lol = 0;
-
-
-
-
-
 
 const bot = new Client({
     disableEveryone: true,
     autorun: true
 });
 
+//Nico bot online response
 bot.on("ready", async ()=> {
     console.log( bot.user.username + " is online!");
     bot.user.setActivity("nico nico nii~");
 });
-
-
 bot.login(botconfig.token);
 
 
+//Random stuff
+const VCID = "474689718425223168"
+let Jimp = require('jimp');
+let lol = 0;
+
+//Bot regular messages
 bot.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
 
+    //Bot message configs
     let prefix = botconfig.prefix;
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
 
-
+    //Nicobot messages & responds
     if (cmd === prefix + "nico") {
         return message.channel.send("Nico Nico nii~ ❤️");
-    }
-
-    if (cmd === prefix + "Test") {
-
-        lol += 1;
-
-
-        if (lol == 1) {
-         return message.channel.send("Nico Nico niiiiiiiiiiiiiiiiiiiiii");
-
-        }
-
-        else if (lol >= 2) {
-         return message.channel.send("fuck u fag");
-
-        }
-
-
     }
 
     if (cmd === prefix + "Hello") {
@@ -71,23 +46,36 @@ bot.on("message", async message => {
 
      if (cmd === prefix + "oof") {
 
-
         let attachment = new Attachment('./otherpics/oof.png');
 
         message.channel.send( `${message.author},`, attachment);
     }
 
-    if (cmd === prefix + ("OpPick" || "opPick" || "oppick" || "op" || "oP" || "OP")) {
+
+    //Testgrounds?
+    if (cmd === prefix + "Test") {
+
+        lol += 1;
+
+        if (lol == 1) {
+         return message.channel.send("Nico Nico niiiiiiiiiiiiiiiiiiiiii");
+        }
+
+        else if (lol >= 2) {
+         return message.channel.send("fuck u fag");
+        }
+    }
+
+        //Sends random Siege Operator
+    if (cmd === prefix + ("OpPick" || "opPick" || "oppick" || "op" || "oP" || "OP" || "Op")) {
 
         let Num = Math.ceil(Math.random()*Operators.length) - 1;
         let attachment = new Attachment("./Operators/" + Operators[Num].image + ".png" );
 
-
-
         return    message.channel.send(Operators[Num].Name + " " + Num, attachment);
-
     }
 
+        //Sends 2 random operators for Siege with images
     if (cmd === prefix + "Op2") {
         let Num1 = Math.ceil(Math.random()*Operators.length) - 1;
 
@@ -98,17 +86,14 @@ bot.on("message", async message => {
         }
         else {
 
-
         let attachment = new Attachment("./Operators/" + Operators[Num1].image + ".png" );
         let attachment2nd = new Attachment("./Operators/" + Operators[Num2].image + ".png" );
 
-
-
        return message.channel.send("Your two Operators are: " + Operators[Num1].Name + " and " + Operators[Num2].Name + ".", attachment);
-
     } }
 
 
+<<<<<<< HEAD
 
     if (cmd === prefix + "OpTest") {
         let Op = Math.ceil(Math.random()*TestOp.length) - 1;
@@ -141,6 +126,9 @@ bot.on("message", async message => {
 
     } }
 
+=======
+        //Image merging testgrounds
+>>>>>>> origin/master
     if (cmd === prefix + "imageTest") {
 
 
@@ -164,12 +152,7 @@ bot.on("message", async message => {
 
                 return message.channel.send("hello", attachment);
             });
-
         });
-
-
-
-
     }
 
 
@@ -178,17 +161,14 @@ bot.on("message", async message => {
 
 
 
-
+//Discord Bot standard replies that we don't actually use
 bot.on('message', message => {
   // If the message is "ping"
   if (message.content === 'ping') {
     // Send "pong" to the same channel
     message.channel.send('pong');
   }
-
-
 });
-
 
 bot.on('message', message => {
   // If the message is "what is my avatar"
@@ -197,5 +177,4 @@ bot.on('message', message => {
     message.reply(message.author.avatarURL);
   }
 });
-
 
