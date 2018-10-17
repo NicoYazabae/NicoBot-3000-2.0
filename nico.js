@@ -1,8 +1,9 @@
 //Important bot configurations
 const botconfig = require("./botconfig.json");
-const Operators = require("./Operators.json");
+const Operators = require("./Ops.json");
 const TestOp = require("./TestOp.json");
 const { Client , Attachment } = require("discord.js");
+const Jimp = require('jimp');
 
 const bot = new Client({
     disableEveryone: true,
@@ -18,8 +19,7 @@ bot.login(botconfig.token);
 
 
 //Random stuff
-const VCID = "474689718425223168"
-let Jimp = require('jimp');
+
 let lol = 0;
 
 //Bot regular messages
@@ -93,16 +93,15 @@ bot.on("message", async message => {
     } }
 
 
-<<<<<<< HEAD
-
     if (cmd === prefix + "OpTest") {
-        let Op = Math.ceil(Math.random()*TestOp.length) - 1;
+        let Op = Math.ceil(Math.random()*Operators.length) - 1;
 
-        let WeaponNum = Math.ceil(Math.random()*TestOp[Op].priweap.length) - 1;
+        let WeaponNum = Math.ceil(Math.random()*Operators[Op].primaryWeapon.length) - 1;
+        let WeaponNumSec = Math.ceil(Math.random()*Operators[Op].secondaryWeapon.length) - 1;
 
 
-        let attachment = new Attachment("./Siege/Operators_icon/" + TestOp[Op].name + ".png" );
-       return message.channel.send("Your Operator is " + TestOp[Op].name + "\nAnd you loadout is: " + (TestOp[Op]).priweap[WeaponNum], attachment);
+        let attachment = new Attachment("./Siege/Operators_icon/" + Operators[Op].name + ".png" );
+       return message.channel.send("Your Operator is " + Operators[Op].name + "\nAnd you loadout is: " + (Operators[Op]).primaryWeapon[WeaponNum] + "\nAnd " + (Operators[Op]).secondaryWeapon[WeaponNumSec], attachment );
 
     }
 
@@ -126,13 +125,13 @@ bot.on("message", async message => {
 
     } }
 
-=======
+
         //Image merging testgrounds
->>>>>>> origin/master
+
     if (cmd === prefix + "imageTest") {
 
 
-        let images = [ './testImage/wallpaper.jpg','./Operators/Ash.png','./Operators/Smoke.png']
+        let images = [ './testImage/wallpaper.jpg','./Siege/Operators_icon/Ash.png','./Siege/Operators_icon/Smoke.png', './testImage/NicoPointing.png']
         let Jimps = [];
 
         for (var i = 0; i < images.length; i++) {
@@ -143,8 +142,9 @@ bot.on("message", async message => {
         Promise.all(Jimps).then(function(data){
             return Promise.all(Jimps);
         }).then(function(data) {
-            data[0].composite(data[1],0,0);
+            data[0].composite(data[1],60,0);
             data[0].composite(data[2],0,0);
+            data[0].composite(data[3],600,600);
 
             data[0].write('final-images/test.png', function() {
                 console.log("wrote the image");

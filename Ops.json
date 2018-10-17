@@ -168,8 +168,8 @@
     "gadget": ["Smoke Grenade", "Breach Charge"]
   },
   {
-    "name": "Jäger",
-    "image": "Jäger",
+    "name": "Jager",
+    "image": "Jager",
     "stat": "Def",
     "primaryWeapon": ["M870 (Shotgun)", "416-C Carbine (Assault Rifle)"],
     "secondaryWeapon": "P12 (Handgun)",
