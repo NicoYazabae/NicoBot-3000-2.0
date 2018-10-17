@@ -8,9 +8,7 @@ let Jimp = require('jimp');
 
 
 
-
 let lol = 0;
-
 
 
 
