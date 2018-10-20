@@ -34,6 +34,7 @@ bot.on("message", async message => {
     let prefix = botconfig.prefix;
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
+    let cmd2 = messageArray[1];
     let args = messageArray.slice(1);
 
 
@@ -56,16 +57,66 @@ bot.on("message", async message => {
 
 
     //Testgrounds?
-    if (cmd === prefix + "Test") {
+    if (cmd === prefix + "PickOp") {
 
-        lol += 1;
 
-        if (lol == 1) {
-            return message.channel.send("Nico Nico niiiiiiiiiiiiiiiiiiiiii");
-        } else if (lol >= 2) {
-            return message.channel.send("fuck u fag");
+
+
+        if (cmd === prefix + "PickOp" && cmd2 === "Def"){
+            return message.channel.send("Nico Nico nii");
+
+
         }
+
+
+        if (cmd === prefix + "PickOp" && cmd2 === "Def"){
+
+             let Op = Math.ceil(Math.random() * Operators.length) - 1;
+                if (Operators[Op].stat === "Atk") {
+                    let Op = Math.ceil(Math.random() * Operators.length) - 1;
+                }}
+
+
+         if (cmd === prefix + "PickOp" && cmd2 !== "Def" && cmd2 !== "Atk"){
+
+             let Op = Math.ceil(Math.random() * Operators.length) - 1;
+
+
+            }
+
+
+
+        let WeaponNum = Math.ceil(Math.random() * Operators[Op].primaryWeapon.length) - 1;
+        let WeaponNumSec = Math.ceil(Math.random() * Operators[Op].secondaryWeapon.length) - 1;
+
+
+        let attachment = new Attachment("./Siege/Operators_icon/" + Operators[Op].name + ".png");
+        return message.channel.send("```md" +
+                                    "\n" +
+                                    ">Your Operator is " +
+                                    "\n" +
+                                    "/* " +
+                                    Operators[Op].name +
+                                    "*\n>And you loadout is:" +
+                                    "\n" +
+                                    "/* " +
+                                    (Operators[Op]).primaryWeapon[WeaponNum] +
+                                    "*\n>And " +
+                                    "\n" +
+                                    "/* " +
+                                    (Operators[Op]).secondaryWeapon[WeaponNumSec] +
+                                    "*```", attachment);
+
+
+
     }
+
+     if (cmd === prefix + "test" && cmd2 === "atk") {
+            return message.channel.send("Nico Nico nii");
+
+    }
+
+
 
     //Sends random Siege Operator
     if (cmd === prefix + ("OpPick" || "opPick" || "oppick" || "op" || "oP" || "OP" || "Op")) {
