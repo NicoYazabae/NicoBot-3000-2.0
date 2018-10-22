@@ -57,7 +57,49 @@ bot.on("message", async message => {
     }
 
 
-    //Testgrounds?
+
+    //Help Commands
+    if (cmd === preffix + "Help"){
+        return messege.channel.send(
+            "Here's a list of Commands followed by a Description of said commands usage." +
+            "\n"+
+            "In the bottom there is a list of regular Commands."+
+            "\n"+
+            "Function: 'PickOp'"+
+            "\n"+
+            "Description: When the OpPick function is entered, the Bot will randomly choose "+
+            "\n"+
+            "\n"+
+            "Function: 'PickOp' atk or def"+
+            "\n"+
+            "Description: When the OpPick function is entered, the Bot will randomly choose "+
+            "\n"+
+            "\n"+
+            "Function: 'nico'"+
+            "\n"+
+            "Description: Outputs 'nico nico niiiiii'"+
+            "\n"+
+            "Function: 'Oof'"+
+            "\n"+
+            "Description: Outputs a picture saying 'oof'+
+            "\n"+
+            "Function: 'Hello'"+
+            "\n"+
+            "Description: Outputs ''"+
+            "\n"+
+            "Function: 'Ping'"+
+            "\n"+
+            "Description: Outputs ''"+
+            "\n"+
+            "Function: '!Avatar'"+
+            "\n"+
+            "Description: Outputs ''"+
+            "\n"+
+        )
+    }
+
+
+    //Testgrounds
     if (cmd === prefix + "PickOp") {
 
 
@@ -65,7 +107,6 @@ bot.on("message", async message => {
 
         if ((cmd === prefix + "PickOp" && cmd2 === "Atk") || (cmd === prefix + "PickOp" && cmd2 === "atk")) {
             statCheckAtk();
-
         }
 
 
@@ -173,15 +214,14 @@ bot.on("message", async message => {
                                     "/* " +
                                     (Operators[Op]).secondaryWeapon[WeaponNumSec] +
                                     "*```", attachment);
-
             }
     }
 
-     if (cmd === prefix + "test" && cmd2 === "atk") {
+
+        if (cmd === prefix + "test" && cmd2 === "atk") {
             return message.channel.send("Nico Nico nii");
 
     }
-
 
 
     //Sends random Siege Operator
@@ -309,3 +349,7 @@ bot.on('message', message => {
         message.reply(message.author.avatarURL);
     }
 });
+
+
+/* MARKED FOR DELETION! MARKED FOR DELETION! MARKED FOR DELETION! MARKED FOR DELETION! MARKED FOR DELETION! MARKED FOR DELETION! MARKED FOR DELETION! MARKED FOR DELETION!
+
