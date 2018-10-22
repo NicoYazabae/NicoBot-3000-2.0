@@ -36,6 +36,7 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let cmd2 = messageArray[1];
     let args = messageArray.slice(1);
+    let send = 0;
 
 
     //Nicobot messages & responds
@@ -62,36 +63,102 @@ bot.on("message", async message => {
 
 
 
-        if (cmd === prefix + "PickOp" && cmd2 === "Def"){
-            return message.channel.send("Nico Nico nii");
-
+        if ((cmd === prefix + "PickOp" && cmd2 === "Atk") || (cmd === prefix + "PickOp" && cmd2 === "atk")) {
+            statCheckAtk();
 
         }
 
 
-        if (cmd === prefix + "PickOp" && cmd2 === "Def"){
+            function statCheckAtk() {
 
-             let Op = Math.ceil(Math.random() * Operators.length) - 1;
+                let Op = Math.ceil(Math.random() * Operators.length) - 1;
+                if (Operators[Op].stat === "Def") {
+
+                    statCheckAtk();
+
+
+                } else if (Operators[Op].stat === "Atk") {
+                            let WeaponNum = Math.ceil(Math.random() * Operators[Op].primaryWeapon.length) - 1;
+                            let WeaponNumSec = Math.ceil(Math.random() * Operators[Op].secondaryWeapon.length) - 1;
+
+
+                            let attachment = new Attachment("./Siege/Operators_icon/" + Operators[Op].name + ".png");
+                            return message.channel.send("```md" +
+                                    "\n" +
+                                    ">Your Operator is " +
+                                    "\n" +
+                                    "/* " +
+                                    Operators[Op].name +
+                                    "*\n>And you loadout is:" +
+                                    "\n" +
+                                    "/* " +
+                                    (Operators[Op]).primaryWeapon[WeaponNum] +
+                                    "*\n>And " +
+                                    "\n" +
+                                    "/* " +
+                                    (Operators[Op]).secondaryWeapon[WeaponNumSec] +
+                                    "*```", attachment);
+                }
+        }
+
+
+
+
+
+
+
+        if ((cmd === prefix + "PickOp" && cmd2 === "Def") || (cmd === prefix + "PickOp" && cmd2 === "def" )){
+            statCheckDef();
+        }
+
+
+
+
+            function statCheckDef() {
+
+                let Op = Math.ceil(Math.random() * Operators.length) - 1;
                 if (Operators[Op].stat === "Atk") {
-                    let Op = Math.ceil(Math.random() * Operators.length) - 1;
-                }}
+
+                    statCheckDef();
 
 
-         if (cmd === prefix + "PickOp" && cmd2 !== "Def" && cmd2 !== "Atk"){
+                } else if (Operators[Op].stat === "Def") {
+                            let WeaponNum = Math.ceil(Math.random() * Operators[Op].primaryWeapon.length) - 1;
+                            let WeaponNumSec = Math.ceil(Math.random() * Operators[Op].secondaryWeapon.length) - 1;
+
+
+                            let attachment = new Attachment("./Siege/Operators_icon/" + Operators[Op].name + ".png");
+                            return message.channel.send("```md" +
+                                    "\n" +
+                                    ">Your Operator is " +
+                                    "\n" +
+                                    "/* " +
+                                    Operators[Op].name +
+                                    "*\n>And you loadout is:" +
+                                    "\n" +
+                                    "/* " +
+                                    (Operators[Op]).primaryWeapon[WeaponNum] +
+                                    "*\n>And " +
+                                    "\n" +
+                                    "/* " +
+                                    (Operators[Op]).secondaryWeapon[WeaponNumSec] +
+                                    "*```", attachment);
+                }
+        }
+
+
+
+
+         if (cmd === prefix + "PickOp" && cmd2 !=="Atk" && cmd2 !== "Def" && cmd2 !== "def" && cmd2 !=="atk"){
 
              let Op = Math.ceil(Math.random() * Operators.length) - 1;
 
-
-            }
-
-
-
-        let WeaponNum = Math.ceil(Math.random() * Operators[Op].primaryWeapon.length) - 1;
-        let WeaponNumSec = Math.ceil(Math.random() * Operators[Op].secondaryWeapon.length) - 1;
+             let WeaponNum = Math.ceil(Math.random() * Operators[Op].primaryWeapon.length) - 1;
+            let WeaponNumSec = Math.ceil(Math.random() * Operators[Op].secondaryWeapon.length) - 1;
 
 
-        let attachment = new Attachment("./Siege/Operators_icon/" + Operators[Op].name + ".png");
-        return message.channel.send("```md" +
+            let attachment = new Attachment("./Siege/Operators_icon/" + Operators[Op].name + ".png");
+            return message.channel.send("```md" +
                                     "\n" +
                                     ">Your Operator is " +
                                     "\n" +
@@ -107,8 +174,7 @@ bot.on("message", async message => {
                                     (Operators[Op]).secondaryWeapon[WeaponNumSec] +
                                     "*```", attachment);
 
-
-
+            }
     }
 
      if (cmd === prefix + "test" && cmd2 === "atk") {
@@ -140,7 +206,7 @@ bot.on("message", async message => {
             let attachment = new Attachment("./Operators/" + Operators[Num1].image + ".png");
             let attachment2nd = new Attachment("./Operators/" + Operators[Num2].image + ".png");
 
-            return message.channel.send("Your two Operators are: " + Operators[Num1].Name + " and " + Operators[Num2].Name + ".", attachment);
+            return message.channel.send("Your two Operators are: " + Operators[Num1].name + " and " + Operators[Num2].name + ".");
         }
     }
 
