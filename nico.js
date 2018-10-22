@@ -70,9 +70,13 @@ bot.on("message", async message => {
             "Description: When the OpPick function is entered, the Bot will randomly choose "+
             "\n"+
             "\n"+
-            "Function: 'PickOp' atk or def"+
+            "Function: 'PickOp'; aditional: 'atk' or 'def'"+
             "\n"+
-            "Description: When the OpPick function is entered, the Bot will randomly choose "+
+            "Description: When the OpPick function is entered, the Bot will randomly choose an Operator for the game Rainbow Six: Siege."+
+            "\n"+
+            "If 'atk' is entered, a random attacking Operator is chosen and outputted, with his or hers loadout randomly chosen too."
+            "\n"+
+            "If 'def' is entered, a random defending Operator is chosen and outputted, with his or hers loadout randomly chosen too."
             "\n"+
             "\n"+
             "Function: 'nico'"+
